@@ -1,25 +1,13 @@
 \documentclass{resume}
 
 \usepackage{hyperref}
-\usepackage[left=0.70in,top=0.5in,right=0.70in,bottom=0.5in]{geometry} % Document margins
+\usepackage[left=0.70in,top=0.5in,right=0.70in,bottom=0.5in]{geometry}
 
 \name{Andrea Tulimiero} % Your name
 \address{111 Uetlibergstrasse, 8045$~\cdot~$Zurich, Switzerland} % Your address
 \address{\texttt{+}39\texttt{-}3400693725$~\cdot~$tulimiero.andrea@gmail.com} % Your phone number and email
 
 \begin{document}
-
-%----------------------------------------------------------------------------------------
-%	TECHNICAL STRENGTHS SECTION
-%----------------------------------------------------------------------------------------
-
-\begin{rSection}{Programming Languages and Open Source}
-C, Python, JavaScript, Java, C\texttt{++} \hfill \href{https://github.com/andreatulimiero}{github.com/andreatulimiero}
-\end{rSection}
-% \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-% Computer Languages & C, Python, Java, JavaScript, C++\\
-% Tools & Git, Vim
-% \end{tabular}
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
@@ -29,11 +17,11 @@ C, Python, JavaScript, Java, C\texttt{++} \hfill \href{https://github.com/andrea
 
 {\bf ETH, Zurich} \hfill {\em September 2018 - September 2020} \\ 
 M.Sc. in Computer Science\\
-Overall GPA: 5.54
+Overall GPA: 5.54 (out of 6.0)
 
 {\bf Sapienza University of Rome, Rome} \hfill {\em September 2015 - June 2018} \\ 
 B.Sc in Engineering in Computer Science\\
-Final grade: 110/110 cum laude
+Final grade: 110 cum laude (out of 110)
 
 \end{rSection}
 
@@ -43,21 +31,18 @@ Final grade: 110/110 cum laude
 
 \begin{rSection}{Experience}
 
-\begin{rSubsection}{Research Assistant}{September 2019 - Present}{Network Security Group, ETH}{Zurich, Switzerland}
-\item \textit{Researching} solutions to achieve \textit{high availability} guarantees against \textit{DDoS} attacks targeting critical SCION components
-\end{rSubsection}
-
-\begin{rSubsection}{Software Engineer}{July 2019 - Present}{Network Security Group, ETH}{Zurich, Switzerland}
-\item \textit{Designing} and \textit{implementing} a new feature for the SCION Coordinator by \textit{restructuring} the web app's database and API [\textbf{Python}, \textbf{JavaScript}, \textit{HTML}, and \textit{CSS}; draft \href{https://github.com/netsec-ethz/scionlab/pull/195}{PR} and \href{https://github.com/andreatulimiero/scionlab-multiap-proposal/blob/master/proposal.pdf}{PDF}]
-\item \textit{Debugged} and \textit{fixed} SCION Coordinator's own and third-party components such as \href{https://github.com/netsec-ethz/scionlab/pull/197}{this} and \href{https://github.com/django-crispy-forms/django-crispy-forms/pull/942}{this} [\textbf{Python}]
-\item \textit{Developed} a lightweight user interface to manage the SCION Box [\textbf{JavaScript}, \textit{HTML}, and \textit{CSS}]
-\end{rSubsection}
-
-%------------------------------------------------
-
-\begin{rSubsection}{Advanced Operating Systems Project}{March 2019 - June 2019}{ETH}{Zurich, Switzerland}
-\item \textit{Implemented} a research-oriented microkernel's main functionalities and \textit{data structures} [language: \textbf{C}]
-\end{rSubsection}
+  \begin{rSubsection}{Software Engineer \& Research Assistant}{July 2019 - Present}{Network Security Group, ETH}{Zurich, Switzerland}
+  \item \textit{Analyzed} security guarantees achieved by the \href{https://www.scion-architecture.net/}{SCION} next-generation internet architecture when targeted by DDoS attacks to \textit{clarify} its strengths to customers.
+  \item \textit{Engineered} a new feature for the SCION Coordinator web app by \textit{redesigning} database and API to increase users engagement by 53\% [\textbf{Python} (Django), \textbf{JavaScript}, \textit{HTML}, and \textit{CSS}]
+  \item \textit{Developed} a SCION compatible home router (SCION Box) to make SCION internet accessible to everyone [\textbf{OpenWRT}, Linux \textbf{net-tools}, \textbf{JavaScript}]
+  \end{rSubsection}
+  \begin{rSubsection}{Advanced Operating Systems (ETH)}{March 2019 - June 2019}{}{}
+  \item \textit{Built} a research-oriented microkernel in a team of 3.
+  \item \textit{Implemented} components like physical and virtual \textit{memory manager}, and lock-free multi-core \textit{IPC}. [\textbf{C}]
+  \end{rSubsection}
+  \begin{rSubsection}{Google workshop for Cloud and Development}{November 2017 - June 2018}{Sapienza University/Google Tel Aviv}{Rome, Italy/Tel Aviv, Israel}
+  \item \textit{Coordinated} a team of 5 to build a web platform to drastically ease and speed up the share of findings between the malware researchers community [\textbf{Python} and \textbf{JavaScript}]
+  \end{rSubsection}
 
 \end{rSection}
 
@@ -68,15 +53,21 @@ Final grade: 110/110 cum laude
 \begin{rSection}{Leadership and Awards}
 
 \begin{rSubsection}{}{}{}{}
-\item \textit{Speaker} at the SCION Day conference presenting the SCION Box (\textit{talk} available \href{https://video.ethz.ch/events/2019/scion/61dd8a87-3894-489d-99d3-77ca66c5ad38.html}{here})
-\item Member of the ETH CTF team's \textit{management committee}
-\item Selected as one of 5 participants of Sapienza University's \textit{Honors Program} for a semester-long research project about cybersecurity [\textbf{C\texttt{++}}, repository \href{https://github.com/andreatulimiero/PinCFGReconstructor}{here}]
-\item Awarded with Mario Negri scholarship for outstanding results during my B.Sc. studies
+\item \textbf{Speaker} at the SCION Day conference presenting the SCION Box (\textit{talk} available \href{https://video.ethz.ch/events/2019/scion/61dd8a87-3894-489d-99d3-77ca66c5ad38.html}{here})
+\item \textit{Planned} ETH CTF team own capture the flag event.
+\item \textit{Selected} as one of 5 participants of Sapienza University's \textit{Honors Program} for a semester-long research project about \textit{dynamic malware analysis} [\textbf{C\texttt{++}}]
+\item \textit{Awarded} with Mario Negri scholarship for outstanding results achieved during my B.Sc. studies
 \end{rSubsection}
 
 \end{rSection}
 
 %----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Programming Languages and Computer Science}
+C, Python, JavaScript, C\texttt{++}, Linux, TCP/IP, Data structures \hfill \href{https://github.com/andreatulimiero}{github.com/andreatulimiero}
+\end{rSection}
 
 %----------------------------------------------------------------------------------------
 %	EXTRACURRICULAR ACTIVITIES
@@ -85,26 +76,8 @@ Final grade: 110/110 cum laude
 \begin{rSection}{Extracurricular Activities}
 
 \begin{rSubsection}{}{}{}{}
-\item Hobbyist competitive programmer on HackerRank and LeetCode [\textbf{C}\texttt{++} and \textbf{Java}]
+\item Hobbyist competitive programmer on HackerRank and LeetCode [\textbf{C}\texttt{++}]
 \end{rSubsection}
-\begin{rSubsection}{Google workshop for Cloud and Development}{November 2017 - June 2018}{Sapienza University/Google Tel Aviv}{Rome, Italy/Tel Aviv, Israel}
-\item \textit{Managed} a team of 5 through the realization of a web platform that eases the process of sharing findings about malware between researchers [\textbf{Python} and \textbf{JavaScript}]
-\end{rSubsection}
-
 \end{rSection}
-
-%----------------------------------------------------------------------------------------
-
-%----------------------------------------------------------------------------------------
-%	EXAMPLE SECTION
-%----------------------------------------------------------------------------------------
-
-%\begin{rSection}{Section Name}
-
-%Section content\ldots
-
-%\end{rSection}
-
-%----------------------------------------------------------------------------------------
 
 \end{document}
