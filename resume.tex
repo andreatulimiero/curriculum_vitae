@@ -2,24 +2,27 @@
 
 \usepackage{hyperref}
 \usepackage[left=0.70in,top=0.5in,right=0.70in,bottom=0.5in]{geometry}
+\usepackage{hyphenat}
 
-\name{Andrea Tulimiero} % Your name
-\address{111 Uetlibergstrasse, 8045$~\cdot~$Zurich, Switzerland$~\cdot~$\texttt{+}39\texttt{-}3400693725} % Your address
-\address{tulimiero.andrea@gmail.com$~\cdot~$\href{https://github.com/andreatulimiero}{github.com/andreatulimiero}} % Your phone number and email
+\name{Andrea Tulimiero}
 
 \begin{document}
 
 %----------------------------------------------------------------------------------------
-%	EDUCATION SECTION
+%	HEADER SECTION
 %----------------------------------------------------------------------------------------
+
+\printname
+\printaddress{111 Uetlibergstrasse, 8045, Zurich, Switzerland$~\cdot~$\texttt{+}41-0762698611}
+\printaddress{\href{mailto:tulimiero.andrea@gmail.com}{tulimiero.andrea@gmail.com}$~\cdot~$\href{https://github.com/andreatulimiero}{github.com/andreatulimiero}}
 
 \begin{rSection}{Education}
 
-{\bf ETH, Zurich} \hfill {\em September 2018 - August 2020} \\ 
+{\bf ETH, Zurich} \hfill {\em September 2018 - April 2021} \\ 
 M.Sc. in Computer Science\\
 Partial GPA: 5.4 (out of 6.0)
 
-{\bf Sapienza University of Rome, Rome} \hfill {\em September 2015 - June 2018} \\ 
+{\bf Sapienza University, Rome} \hfill {\em September 2015 - June 2018} \\ 
 B.Sc in Engineering in Computer Science\\
 Final grade: 110 cum laude (out of 110)
 
@@ -31,11 +34,19 @@ Final grade: 110 cum laude (out of 110)
 
 \begin{rSection}{Experience}
 
-  \begin{rSubsection}{Software Engineer \& Research Assistant}{July 2019 - Present}{Network Security Group, ETH}{Zurich, Switzerland}
+  \begin{rSubsection}{Software Engineer \& Research Assistant}{July 2019 - December 2019}{Network Security Group, ETH}{Zurich, Switzerland}
   % \item Analyzed security guarantees achieved by the \href{https://www.scion-architecture.net/}{SCION} next-generation internet architecture when targeted by DDoS attacks.
-  \item Increased SCION Web App user engagement by 13\% by redesigning Database and API to include a feature to experiment with network multipath technology.  [\textbf{Python} (Django), HTML/\textbf{JavaScript}]
+  \item Increased SCION Web App user engagement by 30\% by redesigning Database and API to include a feature to experiment with network multipath technology.  [\textbf{Python} (Django), HTML/\textbf{JavaScript}]
   \item Built a SCION compatible home router (SCION Box) to allow for the widespread adoption of the SCION internet architecture. [\textbf{OpenWRT}, Linux \textbf{net-tools}]
   \end{rSubsection}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	SELECTED COURSEWORK
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Relevant coursework}
   \begin{rSubsection}{Algorithms Laboratory (ETH)}{September 2019 - January 2020}{}{}
   \item Course on solving competitive programming problems by implementing a combination of basic (Greedy, Dynamic Programming, Graphs) and advanced (Network Flow) algorithms. [\textbf{C\texttt{++}}]
   \end{rSubsection}
@@ -43,10 +54,6 @@ Final grade: 110 cum laude (out of 110)
   \item Developed a research-oriented microkernel in a team of 3.
   \item Implemented physical and virtual memory manager, inter-process communication, and filesystem. [\textbf{C}]
   \end{rSubsection}
-  \begin{rSubsection}{Google Workshop for Cloud and Development}{November 2017 - June 2018}{Sapienza University/Google Tel Aviv}{Rome, Italy/Tel Aviv, Israel}
-  \item Coordinated a team of 5 to build a Web platform to drastically ease and speed up the sharing of findings between the malware researchers community. [\textbf{Python}, HTML/\textbf{JavaScript}]
-  \end{rSubsection}
-
 \end{rSection}
 
 %----------------------------------------------------------------------------------------
@@ -56,10 +63,10 @@ Final grade: 110 cum laude (out of 110)
 \begin{rSection}{Leadership and Awards}
 
 \begin{rSubsection}{}{}{}{}
-\item Speaker at the SCION Day conference with investors presenting the SCION Box. (talk available \href{https://video.ethz.ch/events/2019/scion/61dd8a87-3894-489d-99d3-77ca66c5ad38.html}{here})
-\item Administrator of the ETH CTF team's capture the flag event.
-\item Selected as one of 5 participants of Sapienza University's Honors Program for a semester-long research project about dynamic malware analysis. [\textbf{C\texttt{++}}, Intel \textbf{Pin}]
-\item Awarded with Mario Negri scholarship for outstanding results achieved during my B.Sc. studies.
+\item Speaker at the SCION Day conference with investors presenting the SCION Box (talk available \href{https://video.ethz.ch/events/2019/scion/61dd8a87-3894-489d-99d3-77ca66c5ad38.html}{here})
+\item Hosted the first security Capture The Flag event at ETH
+\item Selected as one of 5 participants of Sapienza University's Honors Program for a semester-long research project about dynamic malware analysis. [\textbf{C\texttt{++}}, Intel Pin]
+\item Awarded with Mario Negri scholarship for outstanding results achieved during my B.Sc. studies
 \end{rSubsection}
 
 \end{rSection}
@@ -69,7 +76,7 @@ Final grade: 110 cum laude (out of 110)
 %----------------------------------------------------------------------------------------
 
 \begin{rSection}{Programming Languages and Computer Science}
-Python, C, C\texttt{++}, JavaScript, SQL \hfill Linux, TCP/IP, Data structures, Hadoop
+  \textbf{Python}, \textbf{C}, \textbf{C\texttt{++}}, \textbf{JavaScript}, \textbf{SQL} \hfill Linux, TCP/IP, Data structures, Hadoop
 \end{rSection}
 
 %----------------------------------------------------------------------------------------
@@ -79,8 +86,10 @@ Python, C, C\texttt{++}, JavaScript, SQL \hfill Linux, TCP/IP, Data structures, 
 \begin{rSection}{Extracurricular Activities}
 
 \begin{rSubsection}{}{}{}{}
-\item Competitive programmer on HackerRank and LeetCode. [\textbf{C}\texttt{++}]
 \item Freelancer full-stack developer realizing ad-hoc solutions for small companies. [Django, Android]
+\end{rSubsection}
+\begin{rSubsection}{Google Workshop for Cloud and Development}{November 2017 - June 2018}{Sapienza University/Google Tel Aviv}{Rome, Italy/Tel Aviv, Israel}
+\item Coordinated a team of 5 to build a Web platform to drastically ease and speed up the sharing of findings between the malware researchers community. [\textbf{Python}, HTML/\textbf{JavaScript}]
 \end{rSubsection}
 \end{rSection}
 
